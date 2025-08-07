@@ -50,7 +50,7 @@ button{
 .brushColor{
     background-color: rgb(142, 22, 22);
     transition: background-color 0.5s ease;
-    color:rgb(248, 238, 223);;
+    color:rgb(248, 238, 223);
     
 }
 .brushColor:hover{
@@ -58,6 +58,15 @@ button{
      animation: rainbow 2s infinite;
      
 }
+.brushColor.blackAndWhite{
+    background-color:black;
+    color:rgb(248, 238, 223);
+}
+.brushColor.blackAndWhite:hover{
+    background-color: rgb(60, 54, 54);
+    animation: none;
+}
+
 @keyframes rainbow {
   0% { background-color: rgb(142, 22, 22); } /* Red */
   20% { background-color: #b7720c; } /* Orange */
@@ -77,5 +86,22 @@ button{
 .box{
     background-color: rgb(232, 201, 153);
     flex:1;
-    border:0.06rem rgb(248, 238, 223) solid;
+    /* border:0.01rem rgb(49, 40, 25) solid; */
+    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    background-color: black;
+    color:rgb(232, 201, 153);
+    max-height:1.6rem;
+    font-size:1rem;
+    margin-top:2rem;
+    padding:0.4rem;
+}
+.border:hover{
+    background-color: rgb(142, 22, 22);
+    color:rgb(248, 238, 223);
 }
