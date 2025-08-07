@@ -60,9 +60,22 @@ button{
 }
 @keyframes rainbow {
   0% { background-color: rgb(142, 22, 22); } /* Red */
-  20% { background-color: #8f5600; } /* Orange */
-  40% { background-color: #908200; } /* Yellow */
+  20% { background-color: #b7720c; } /* Orange */
+  40% { background-color: #b8a712; } /* Yellow */
   60% { background-color: #007d04; } /* Green */
   80% { background-color: #00447c; } /* Blue */
   100% { background-color: #590069; } /* Purple */
+}
+.sketch{
+    display:flex;
+    flex-direction: column;
+}
+.rowDiv{
+    display:flex;
+    flex:1;
+}
+.box{
+    background-color: rgb(232, 201, 153);
+    flex:1;
+    border:0.06rem rgb(248, 238, 223) solid;
 }
